@@ -1,3 +1,13 @@
+## How to run
+
+```bash
+./mvnw clean tomcat7:run
+```
+
+----
+
+notes
+
 ```bash
 git clone https://github.com/yo1000/legacy-plain-spring-mvc.git
 cd legacy-plain-spring-mvc
