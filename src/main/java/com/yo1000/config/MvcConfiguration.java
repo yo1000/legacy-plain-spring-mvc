@@ -1,5 +1,7 @@
 package com.yo1000.config;
 
+import com.yo1000.repository.DateTimeRepository;
+import com.yo1000.repository.system.SystemDateTimeRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -13,6 +15,10 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @ComponentScan(basePackages="com.yo1000")
 @EnableWebMvc
 public class MvcConfiguration extends WebMvcConfigurerAdapter{
+	@Bean
+	public DateTimeRepository dateTimeRepository() {
+		return new SystemDateTimeRepository();
+	}
 
 	@Bean
 	public ViewResolver getViewResolver(){

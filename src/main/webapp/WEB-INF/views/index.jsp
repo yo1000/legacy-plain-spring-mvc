@@ -10,5 +10,9 @@
     <body>
         <h1>Hello World!</h1>
         <p>This is the homepage!</p>
+        <ul>
+            <li>now: ${ now }</li>
+            <li>today: ${ today }</li>
+        </ul>
     </body>
 </html>
